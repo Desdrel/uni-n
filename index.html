@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="menu container">
+            <div style="align-items: center;">
+            <img src="images/log.png" alt="" width="80" >
+             </div>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="images/men.svg" class="menu-icono" alt="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#lista">Menú</a></li>
+                    <li><a href="#lista-2">Bebidas</a></li>
+                    <li><a href="#lista-3">Postres</a></li>
+                    <li><a href="#Contactanos">Contactanos</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="images/carro.png" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                            <BR></BR>
+                            <p class="total">Total de la compra: s/. <span> 0.00 </span></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <h1>Sabor y tradición</h1>
+            <p>
+
+                Bienvenido al restaurante sabor y tradición, donde la excelencia culinaria y la experiencia
+                gastronómica se fusionan para ofrecerte un viaje inolvidable a través de los sabores más refinados y
+                creativos. Con un equipo de chefs aclamados internacionalmente, cada plato es una obra maestra que
+                combina técnicas innovadoras con ingredientes frescos y cuidadosamente seleccionados.
+            </p>
+            <div class="botons">
+                <a href="https://abadestriana.com/los-restaurantes-su-origen-e-historia/" class="btn-1">Mas
+                    información</a>
+            </div>
+            <div class="socials-1">
+                <img src="images/insta.svg" alt="" class="social-link" data-url="https://www.instagram.com/harumisotog/">
+                <img src="images/face.svg" alt="" class="social-link"
+                    data-url="https://www.facebook.com/leidyharumi.sotogonzales">
+                <img src="images/tik.svg" alt="" class="social-link"
+                    data-url="https://www.tiktok.com/@haru46367?is_from_webapp=1&sender_device=pc">
+            </div>
+            <a href="#lista">
+                <img class="arrow" src="images/arrow.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <section class="recetas container">
+
+        <div class="recetas-1">
+            <h3>Menus delicios y nutritivos</h3>
+            <hr>
+            <p>MENUS</p>
+        </div>
+        <div class="recetas-2">
+            <h2>Muchos <br> comidas para <br> disfrutar en <br> familia</h2>
+        </div>
+
+    </section>
+
+
+
+    <section class="platillos container" id="lista">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Chuleta a la plancha</h3>
+                        <p class="precio">$150</p>
+                        <img src="images/pl1.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Chuleta con romero</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl2.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Chuleta con pure</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl3.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Carne roja </h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl4.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="gallery">
+        <img src="images/gallery1.jpg" alt="Gallery Img1" class="gallery-img-1">
+        <img src="images/gallery2.jpg" alt="Gallery Img2" class="gallery-img-2">
+        <img src="images/gallery3.jpg" alt="Gallery Img3" class="gallery-img-3">
+        <img src="images/gallery4.jpg" alt="Gallery Img4" class="gallery-img-4">
+        <img src="images/gallery5.jpg" alt="Gallery Img5" class="gallery-img-5">
+    </section>
+
+
+    <section class="recetas container">
+
+        <div class="recetas-2">
+            <h2>Variedad <br> de <br> bebidas </h2>
+        </div>
+        <div class="recetas-1">
+            <h3>Bebidas naturales, como tus refrescos favoritos!</h3>
+            <hr>
+            <p>Bebidas</p>
+        </div>
+
+
+    </section>
+
+
+
+    <section class="platillos container" id="lista-2">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Carne roja</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c1.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="5" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Carne pura</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c2.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="6" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c3.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="7" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1">Corte americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/c1.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="8" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <section class="gallery">
+        <img src="images/gallery1.jpg" alt="Gallery Img1" class="gallery-img-1">
+        <img src="images/gallery2.jpg" alt="Gallery Img2" class="gallery-img-2">
+        <img src="images/gallery3.jpg" alt="Gallery Img3" class="gallery-img-3">
+        <img src="images/gallery4.jpg" alt="Gallery Img4" class="gallery-img-4">
+        <img src="images/gallery5.jpg" alt="Gallery Img5" class="gallery-img-5">
+    </section>
+
+    <section class="recetas container">
+
+        <div class="recetas-1">
+            <h3>Postres delicios y nutritivos</h3>
+            <hr>
+            <p>POSTRES</p>
+        </div>
+        <div class="recetas-2">
+            <h2>Muchos <br> postres para <br> disfrutar en <br> familia</h2>
+        </div>
+
+    </section>
+
+    <section class="platillos container" id="lista-3">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Chuleta a la plancha</h3>
+                        <p class="precio">$150</p>
+                        <img src="images/pl1.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="9" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Chuleta con romero</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl2.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="10" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Chuleta con pure</h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl3.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="11" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3>Carne roja </h3>
+                        <p class="precio">$200</p>
+                        <img src="images/pl4.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat, vitae. Eligendi ipsum nesciunt,
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="12" data-price="$200">Agregar al carrito</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+
+    <section class="recetas container" id="Contactanos">
+
+
+        <div class="recetas-1">
+
+            <hr>
+            <p>Contacto</p>
+        </div>
+
+
+    </section>
+
+    <footer class="footer container">
+        <div class="links">
+            <div class="link">
+                <h3>Redes</h3>
+                <p>
+                    ¡Únete a nuestra comunidad y déjanos sorprenderte con lo mejor de nuestra cocina y hospitalidad!
+                </p>
+                <div class="socials-2">
+                    <img src="images/insta.svg" alt="" class="social-link"
+                        data-url="https://www.instagram.com/harumisotog/">
+                    <img src="images/face.svg" alt="" class="social-link"
+                        data-url="https://www.facebook.com/leidyharumi.sotogonzales">
+                    <img src="images/tik.svg" alt="" class="social-link"
+                        data-url="https://www.tiktok.com/@haru46367?is_from_webapp=1&sender_device=pc">
+                </div>
+
+            </div>
+
+            <div class="link-1">
+                <h3>Esperamos su visita en nuestro local <br> cada vez mas cerca de tí!</h3>
+                <img src="images/maps.avif" alt="" width="500">
+            </div>
+            <div class="link">
+                <h3>Buzon de sugerencias</h3>
+                <p>Nos encantaría escuchar cualquier sugerencia que tengas para hacer de tu visita una experiencia aún
+                    más gratificante. Tu participación es fundamental para nuestro compromiso continuo con la excelencia
+                    y la satisfacción de nuestros clientes. <br>
+                    ¡Gracias por contribuir a hacer de nuestro servicio algo aún mejor!</p>
+                    <form action="https://formsubmit.co/bhorysosco31@gmail.com" method="POST" >
+                    <p><label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre:" class="inp">
+<br>
+                    <label for="email">Email</label> <br>
+                    <input type="text" name="Email" class="inp">
+
+                    <label for="comments">Comentarios</label>
+                    <textarea name="comentario" cols="15" rows="5" class="inp"></textarea>
+<br>
+                    <input class="btn-4" type="submit" value="enviar">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+
